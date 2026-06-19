@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đời sống sức khoẻ</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+      <body>
+        <!-- =============================================
+            HEADER: TOPBAR + NAVBAR
+        ============================================= -->
+        <header class="site-header">
+            <!-- Main navbar -->
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="navbar__inner">
+                    <!-- Brand -->
+                    <a href="#" class="navbar__brand" aria-label="Trang chủ">
+                        <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                        <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                        </div>
+                    </a>
+
+                    <!-- Nav links -->
+                    <div class="navbar__nav">
+                        <a href="../Trangchu.html">Trang chủ</a>
+                        <a href="../TinTucYTe/TinTucYTe.html">Tin tức y tế</a>
+                        <a href="TinhTrangSucKhoe.html" class="active">Tình trạng sức khoẻ</a>
+                        <a href="../LoiSongKhoe/LoiSongKhoe.html">Lối sống khoẻ</a>
+                        <a href="../SoCuu/SoCuu.html">Sơ cứu</a>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="navbar__actions">
+                        <button class="navbar__search-btn" aria-label="Tìm kiếm">
+                        <input class="navbar__search" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0Z"/>
+                        </svg>
+                        </button>
+                        <a href="../../../../DangNhap.htm" class="navbar__login-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+                        </svg>
+                        Đăng nhập
+                        </a>
+                        <button class="navbar__hamburger" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+  <!-- =====================================================
+       HERO TÌM KIẾM CHUYÊN MỤC
+  ===================================================== -->
+  <section class="category-hero-section">
+    <div class="site-wrapper">
+      <h1 class="category-hero-title">Khám phá chuyên mục sức khoẻ</h1>
+      <p class="category-hero-subtitle">
+        Tìm kiếm thông tin y khoa tin cậy từ đội ngũ chuyên gia hàng đầu để bảo vệ sức khoẻ gia đình bạn.
+      </p>
+
+      <form class="category-search-bar" role="search" onsubmit="return false;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="text"
+          class="category-search-input"
+          placeholder="Tìm kiếm chuyên mục..."
+          aria-label="Tìm kiếm chuyên mục sức khoẻ"
+        />
+      </form>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       GRID DANH MỤC "BỆNH LÝ"
+  ===================================================== -->
+  <section class="category-grid-section">
+    <div class="site-wrapper">
+        <h2 class="category-grid-heading">Bệnh lý</h2>
+        <div class="category-card-grid">
+
+            <!-- Tim mạch & Tuần hoàn -->
+            <a href="../../../../../TinhTrangSucKhoe/TimMachTuanHoan/TimMachTuanHoan.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Tim mạch &amp; Tuần hoàn</h3>
+                <p class="category-card-desc">Thông tin về cao huyết áp, đột quỵ và sức khoẻ tim mạch cơ bản.</p>
+            </div>
+            </a>
+
+            <!-- Hô hấp -->
+            <a href="../../../../../TinhTrangSucKhoe/HoHap/HoHap.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 12c0-3 1-5 3-7M18 12c0-3-1-5-3-7M6 12a6 6 0 0 0 12 0M12 12v9M9 21h6"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Hô hấp</h3>
+                <p class="category-card-desc">Thông tin về hen suyễn, viêm phổi và các bệnh đường hô hấp thường gặp.</p>
+            </div>
+            </a>
+
+            <!-- Tiêu hóa -->
+            <a href="../../../../../TinhTrangSucKhoe/TieuHoa/TieuHoa.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 2c0 2-2 2-2 5s2 5 2 8a4 4 0 0 1-4 4M15 2c0 2 2 2 2 5s-2 5-2 8a4 4 0 0 0 4 4"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Tiêu hóa</h3>
+                <p class="category-card-desc">Thông tin về dạ dày, đại tràng và duy trì hệ thống tiêu hóa khoẻ mạnh.</p>
+            </div>
+            </a>
+
+            <!-- Cơ xương khớp -->
+            <a href="../../../../../TinhTrangSucKhoe/CoXuongKhop/CoXuongKhop.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="m8.5 8.5 7 7"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Cơ xương khớp</h3>
+                <p class="category-card-desc">Giải pháp cho thoái hóa khớp, loãng xương và đau mỏi vai gáy hằng ngày.</p>
+            </div>
+            </a>
+
+            <!-- Thần kinh -->
+            <a href="../../../../../TinhTrangSucKhoe/ThanKinh/ThanKinh.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 2a4 4 0 0 0-4 4c0 1 .3 1.5.5 2C4.5 8.5 4 9.5 4 11a4 4 0 0 0 2 3.46V18a3 3 0 0 0 3 3h1M15 2a4 4 0 0 1 4 4c0 1-.3 1.5-.5 2 1 .5 1.5 1.5 1.5 3a4 4 0 0 1-2 3.46V18a3 3 0 0 1-3 3h-1"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Thần kinh</h3>
+                <p class="category-card-desc">Điều trị đau đầu, mất ngủ và các rối loạn chức năng thần kinh phổ biến.</p>
+            </div>
+            </a>
+
+            <!-- Nội tiết & Chuyển hóa -->
+            <a href="../../../../../TinhTrangSucKhoe/NoiTietChuyenHoa/NoiTietChuyenHoa.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v16"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Nội tiết &amp; Chuyển hóa</h3>
+                <p class="category-card-desc">Quản lý tiểu đường, bệnh lý tuyến giáp và rối loạn chuyển hóa mạn tính.</p>
+            </div>
+            </a>
+
+            <!-- Thận & Tiết niệu -->
+            <a href="../../../../../TinhTrangSucKhoe/ThanTietNieu/ThanTietNieu.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3c-2 0-3 2-3 5 0 6 1 11 4 13 1-3 1-6 1-9M16 3c2 0 3 2 3 5 0 6-1 11-4 13-1-3-1-6-1-9"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Thận &amp; Tiết niệu</h3>
+                <p class="category-card-desc">Sức khoẻ thận, bàng quang và các vấn đề về đường tiết niệu ở mọi độ tuổi.</p>
+            </div>
+            </a>
+
+            <!-- Sinh dục & Sinh sản -->
+            <a href="../../../../../TinhTrangSucKhoe/SinhDucSinhSan/SinhDucSinhSan.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Sinh dục &amp; Sinh sản</h3>
+                <p class="category-card-desc">Chăm sóc sức khoẻ sinh sản định kỳ và kế hoạch hóa gia đình an toàn.</p>
+            </div>
+            </a>
+
+            <!-- Cơ quan giác quan -->
+            <a href="../../../../../TinhTrangSucKhoe/CoQuanGiacQuan/CoQuanGiacQuan.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Cơ quan giác quan</h3>
+                <p class="category-card-desc">Bảo vệ thị lực, thính lực và sức khoẻ các cơ quan giác quan trong cuộc sống.</p>
+            </div>
+            </a>
+
+            <!-- Ngoài da -->
+            <a href="../../../../../TinhTrangSucKhoe/NgoaiDa/NgoaiDa.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 10c0-3 2-6 5-6s5 3 5 6c0 4-2 6-5 10-3-4-5-6-5-10z"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Ngoài da</h3>
+                <p class="category-card-desc">Thông tin về các bệnh lý về da thường gặp, cách chăm sóc và điều trị hiệu quả.</p>
+            </div>
+            </a>
+
+            <!-- Trẻ em -->
+            <a href="../../../../../TinhTrangSucKhoe/TreEm/TreEm.html" class="category-card">
+            <div class="category-card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="7" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                </svg>
+            </div>
+            <div class="category-card-body">
+                <h3 class="category-card-title">Trẻ em</h3>
+                <p class="category-card-desc">Thông tin về các bệnh lý ở trẻ em thường gặp, cách chăm sóc và điều trị hiệu quả.</p>
+            </div>
+            </a>
+        </div>
+    </div>
+  </section>
+
+<!-- =============================================
+     FOOTER
+============================================= -->
+<footer class="footer" aria-label="Footer">
+  <div class="footer__inner">
+
+    <!-- Brand column -->
+    <div class="footer__brand">
+      <a href="#" class="footer__brand-logo" aria-label="Trang chủ">
+        <img src="/assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+        <span class="footer__brand-name">Đời sống sức khoẻ</span>
+      </a>
+      <p class="footer__brand-desc">
+        Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+      </p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+        <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+        <a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a>
+        <a href="#" class="footer__social-link" aria-label="Zalo">Z</a>
+      </div>
+    </div>
+
+    <!-- Chuyên mục -->
+    <div class="footer__col">
+      <h3 class="footer__col-title">Chuyên mục chính</h3>
+      <nav class="footer__links" aria-label="Chuyên mục">
+        <a href="#">Tin tức y tế</a>
+        <a href="#">Tình trạng sức khoẻ</a>
+        <a href="#">Lối sống khoẻ</a>
+        <a href="#">Hướng dẫn sơ cứu</a>
+      </nav>
+    </div>
+
+    <!-- Hỗ trợ -->
+    <div class="footer__col">
+      <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+      <nav class="footer__links" aria-label="Hỗ trợ">
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Điều khoản sử dụng</a>
+        <a href="#">Chính sách bảo mật và điều khoản</a>
+      </nav>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer__col">
+      <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+      <p class="footer__newsletter-text">
+        Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+      </p>
+      <div class="footer__newsletter-form">
+        <input
+          type="email"
+          class="footer__newsletter-input"
+          placeholder="Email của bạn"
+          aria-label="Email đăng ký nhận tin"
+        />
+        <button class="footer__newsletter-btn" aria-label="Đăng ký">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer__bottom">
+    <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+  </div>
+</footer>
+
+</body>
+</html>
