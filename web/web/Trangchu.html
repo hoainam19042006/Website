@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đời sống sức khoẻ - Tin tức sức khoẻ và đời sống lành mạnh hàng ngày" />
+    <title>Đời sống sức khoẻ - Tin tức sức khoẻ mới nhất</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+      <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+          <div class="navbar__inner">
+            <!-- Brand -->
+            <a href="Trangchu.html" class="navbar__brand" aria-label="Trang chủ">
+              <img src="assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+              <div class="navbar__brand-text">
+                <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+              </div>
+            </a>
+
+            <!-- Nav links -->
+            <div class="navbar__nav">
+              <a href="Trangchu.html" class="active">Trang chủ</a>
+              <a href="TinTucYTe/TinTucYTe.html">Tin tức y tế</a>
+              <a href="TinhTrangSucKhoe/TinhTrangSucKhoe.html">Tình trạng sức khoẻ</a>
+              <a href="LoiSongKhoe/LoiSongKhoe.html">Lối sống khoẻ</a>
+              <a href="../SoCuu/SoCuu.html">Sơ cứu</a>
+            </div>
+
+            <!-- Actions -->
+            <div class="navbar__actions">
+                <button class="navbar__search-btn" aria-label="Tìm kiếm">
+                  <input id="searchInput" type="text" class="form-control" placeholder="Tìm kiếm...">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0Z"/>
+                    </svg>
+                </button>
+                <a id="loginButton" href="DangNhap.html" class="navbar__login-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+                  </svg>
+                  Đăng nhập
+                </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- =============================================
+          BODY — SECTION 1: HERO / TIN NỔI BẬT
+      ============================================= -->
+      <section class="hero" aria-label="Tin nổi bật">
+        <div class="hero__inner">
+
+          <!-- Featured article -->
+          <article class="hero__featured">
+            <img
+              src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=900&q=80"
+              alt="Đột phá trong điều trị tim mạch"
+              class="hero__featured-img"
+            />
+            <div class="hero__featured-content">
+              <span class="hero__badge">Nghiên cứu mới</span>
+              <h1 class="hero__title">Đột phá trong điều trị tim mạch: Công nghệ Nano mới mang lại hi vọng</h1>
+              <p class="hero__excerpt">
+                Nghiên cứu mới nhất từ Viện Tim mạch Quốc gia cho thấy liệu pháp Nano có thể giảm tới 40% nguy cơ biến chứng sau phẫu thuật tim mạch và cải thiện đáng kể chất lượng sống.
+              </p>
+              <div class="hero__meta">
+                <div class="hero__meta-author">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0"/>
+                  </svg>
+                  BS. Nguyễn Văn A
+                </div>
+                <span>2 giờ trước</span>
+                <span>5 phút đọc</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Trending sidebar -->
+          <aside class="hero__sidebar">
+            <h2 class="hero__trending-title">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+              </svg>
+              Xu hướng hôm nay
+            </h2>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Tiểu đường</span>
+              <span class="trending-item__title">Dấu hiệu cảnh báo sớm bệnh tiểu đường bạn không nên bỏ qua</span>
+              <span class="trending-item__time">3 giờ trước</span>
+            </a>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Dinh dưỡng</span>
+              <span class="trending-item__title">Bổ sung Vitamin D đúng cách cho trẻ sơ sinh mùa đông</span>
+              <span class="trending-item__time">4 giờ trước</span>
+            </a>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Sức đề kháng</span>
+              <span class="trending-item__title">Phân biệt cảm lạnh thông thường và cúm mùa</span>
+              <span class="trending-item__time">5 giờ trước</span>
+            </a>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Thần kinh</span>
+              <span class="trending-item__title">Nghiên cứu: Uống cà phê mỗi ngày giúp giảm Parkinson</span>
+              <span class="trending-item__time">6 giờ trước</span>
+            </a>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Vitamin</span>
+              <span class="trending-item__title">Vitamin D: Vai trò quan trọng trong hệ miễn dịch</span>
+              <span class="trending-item__time">7 giờ trước</span>
+            </a>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Tiểu đường</span>
+              <span class="trending-item__title">Phòng ngừa bệnh tiểu đường qua lối sống lành mạnh</span>
+              <span class="trending-item__time">8 giờ trước</span>
+            </a>
+
+            <a href="#" class="trending-item">
+              <span class="trending-item__category">Cơ xương khớp</span>
+              <span class="trending-item__title">Dấu hiệu cảnh báo nguy cơ bị đau đầu gối mãn tính</span>
+              <span class="trending-item__time">9 giờ trước</span>
+            </a>
+          </aside>
+        </div>
+      </section>
+
+
+      <!-- =============================================
+          BODY — SECTION 2: TIN TỨC MỚI NHẤT
+      ============================================= -->
+      <section class="latest-news" aria-label="Tin tức mới nhất">
+        <div class="latest-news__inner">
+
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="section-title__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"/>
+                </svg>
+              </span>
+              Tin tức mới nhất
+            </h2>
+            <a href="#" class="section-view-all">
+              Xem tất cả
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="news-grid">
+
+            <!-- Card 1 -->
+            <article class="news-card">
+              <div class="news-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=75"
+                  alt="Vắc-xin cúm mới"
+                  class="news-card__img"
+                />
+                <span class="news-card__category">Sức khoẻ</span>
+              </div>
+              <div class="news-card__body">
+                <h3 class="news-card__title">Cập nhật tình hình vắc-xin cúm mới nhất năm 2024</h3>
+                <p class="news-card__excerpt">Các chuyên gia y tế khuyến cáo người dân cần tiêm phòng sớm để bảo vệ sức khoẻ trong mùa đông sắp tới.</p>
+                <div class="news-card__meta">
+                  <div class="news-card__author">
+                    <span>BS. Trần Thị B</span>
+                  </div>
+                  <span>4 giờ trước</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="news-card">
+              <div class="news-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=75"
+                  alt="Liệu pháp điều trị mất ngủ"
+                  class="news-card__img"
+                />
+                <span class="news-card__category">Phục hồi</span>
+              </div>
+              <div class="news-card__body">
+                <h3 class="news-card__title">Phương pháp trị liệu mới giúp phục hồi chức năng giảm bằng mãn tính</h3>
+                <p class="news-card__excerpt">Chương trình tập luyện kết hợp liệu pháp tâm lý cho hiệu quả cải thiện đáng kể sau 6 tuần áp dụng liên tục.</p>
+                <div class="news-card__meta">
+                  <div class="news-card__author">
+                    <span>PGS. Lê Văn C</span>
+                  </div>
+                  <span>6 giờ trước</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 (placeholder) -->
+            <article class="news-card">
+              <div class="news-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=75"
+                  alt="Dinh dưỡng khoa học"
+                  class="news-card__img"
+                />
+                <span class="news-card__category">Dinh dưỡng</span>
+              </div>
+              <div class="news-card__body">
+                <h3 class="news-card__title">Chế độ ăn khoa học giúp tăng cường hệ miễn dịch cho trẻ em</h3>
+                <p class="news-card__excerpt">Các nghiên cứu mới khẳng định vai trò của rau củ quả tươi và protein chất lượng cao trong chế độ ăn hàng ngày.</p>
+                <div class="news-card__meta">
+                  <div class="news-card__author">
+                    <span>TS. Phạm Thu D</span>
+                  </div>
+                  <span>8 giờ trước</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- =============================================
+          BODY — SECTION 3: LỐI SỐNG KHOẺ
+      ============================================= -->
+      <section class="lifestyle" aria-label="Lối sống khoẻ">
+        <div class="lifestyle__inner">
+
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="section-title__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>
+                </svg>
+              </span>
+              Lối sống khoẻ
+            </h2>
+            <a href="#" class="section-view-all">
+              Xem tất cả
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="lifestyle-list">
+
+            <!-- Article 1 -->
+            <article class="lifestyle-card">
+              <div class="lifestyle-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=75"
+                  alt="Dinh dưỡng Địa Trung Hải"
+                  class="lifestyle-card__img"
+                />
+              </div>
+              <div class="lifestyle-card__body">
+                <span class="lifestyle-card__tag">Dinh dưỡng</span>
+                <h3 class="lifestyle-card__title">Chế độ ăn Địa Trung Hải: Bí quyết trường thọ và sức khoẻ mạnh</h3>
+                <p class="lifestyle-card__excerpt">Nghiên cứu mới khẳng định rằng việc áp dụng chế độ ăn nhiều ô liu, dầu ô liu và rau xanh giúp bảo vệ sức khoẻ toàn diện.</p>
+                <div class="lifestyle-card__meta">
+                  <div class="lifestyle-card__meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                    4 phút đọc
+                  </div>
+                  <span>3 ngày trước</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="lifestyle-card">
+              <div class="lifestyle-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=400&q=75"
+                  alt="Tập thể dục 30 phút"
+                  class="lifestyle-card__img"
+                />
+              </div>
+              <div class="lifestyle-card__body">
+                <span class="lifestyle-card__tag">Thể thao</span>
+                <h3 class="lifestyle-card__title">30 phút đi bộ mỗi ngày có thể thay đổi cơ thể bạn như thế nào?</h3>
+                <p class="lifestyle-card__excerpt">Hoạt động thể chất nhẹ nhàng, đều đặn mỗi ngày được chứng minh là cách tiếp cận tốt nhất để duy trì cân nặng và sức khoẻ tim mạch và tinh thần.</p>
+                <div class="lifestyle-card__meta">
+                  <div class="lifestyle-card__meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                    5 phút đọc
+                  </div>
+                  <span>5 ngày trước</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="lifestyle-card">
+              <div class="lifestyle-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&q=75"
+                  alt="Yoga và sức khoẻ tinh thần"
+                  class="lifestyle-card__img"
+                />
+              </div>
+              <div class="lifestyle-card__body">
+                <span class="lifestyle-card__tag">Tâm lý</span>
+                <h3 class="lifestyle-card__title">Yoga và thiền định: Giải pháp giảm căng thẳng hiệu quả trong cuộc sống hiện đại</h3>
+                <p class="lifestyle-card__excerpt">Các chuyên gia tâm lý khuyến khích dành ít nhất 15 phút mỗi ngày để thực hành thiền định nhằm cải thiện sức khoẻ tinh thần và chất lượng giấc ngủ.</p>
+                <div class="lifestyle-card__meta">
+                  <div class="lifestyle-card__meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                    6 phút đọc
+                  </div>
+                  <span>1 tuần trước</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="lifestyle-card">
+              <div class="lifestyle-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=75"
+                  alt="Tập gym"
+                  class="lifestyle-card__img"
+                />
+              </div>
+              <div class="lifestyle-card__body">
+                <span class="lifestyle-card__tag">Thể thao</span>
+                <h3 class="lifestyle-card__title">30 phút tập gym mỗi ngày có thể thay đổi cơ thể bạn như thế nào?</h3>
+                <p class="lifestyle-card__excerpt">Hoạt động thể chất trên trọng tải mỗi ngày có tác dụng rất tốt đối với sức khoẻ tim mạch và tinh thần của bạn.</p>
+                <div class="lifestyle-card__meta">
+                  <div class="lifestyle-card__meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                    4 phút đọc
+                  </div>
+                  <span>2 tuần trước</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer" aria-label="Footer">
+      <div class="footer__inner">
+
+        <!-- Brand column -->
+        <div class="footer__brand">
+          <a href="#" class="footer__brand-logo" aria-label="Trang chủ">
+            <img src="assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+            <span class="footer__brand-name">Đời sống sức khoẻ</span>
+          </a>
+          <p class="footer__brand-desc">
+            Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img class="footer__social-link-image" src="assets/facebook.png" alt="Facebook"/>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <img class="footer__social-link-image" src="assets/youtube.png" alt="Youtube"/>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img class="footer__social-link-image" src="assets/instagram.png" alt="Instagram"/>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Gmail">
+              <img class="footer__social-link-image" src="assets/gmail.png" alt="Gmail"/>
+            </a>
+          </div>
+        </div>
+
+        <!-- Chuyên mục -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Chuyên mục chính</h3>
+          <nav class="footer__links" aria-label="Chuyên mục">
+            <a href="TinTucYTe/TinTucYTe.html">Tin tức y tế</a>
+            <a href="TinhTrangSucKhoe/TinhTrangSucKhoe.html">Tình trạng sức khoẻ</a>
+            <a href="LoiSongKhoe/LoiSongKhoe.html">Lối sống khoẻ</a>
+            <a href="SoCuu/SoCuu.html">Hướng dẫn sơ cứu</a>
+          </nav>
+        </div>
+
+        <!-- Hỗ trợ -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+          <nav class="footer__links" aria-label="Hỗ trợ">
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật và điều khoản</a>
+          </nav>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+          <p class="footer__newsletter-text">
+            Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+          </p>
+          <div class="footer__newsletter-form">
+            <input
+              id="newsletterEmail"
+              type="email"
+              class="footer__newsletter-input"
+              placeholder="Email của bạn"
+              aria-label="Email đăng ký nhận tin"
+            />
+            <button id="newsletterBtn" class="footer__newsletter-btn" aria-label="Đăng ký">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+      </div>
+    </footer>
+    <script src="JS/home.js"></script>
+  </body>
+</html>
