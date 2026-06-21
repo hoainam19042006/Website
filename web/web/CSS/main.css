@@ -11,6 +11,7 @@
 @import "../CSS/DangKy.css";
 @import "../CSS/responsive.css";
 @import "../CSS/animation.css";
+@import "../CSS/socuu.css";
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -31,5 +32,22 @@
       margin: 0 auto;
       padding: 0 var(--space-md);
     }
+    .fa-img-box {
+      width: 100%;
+      height: 220px;
+      background-color: #e5e7eb;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
 
+    }
+
+    .fa-step-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
     
